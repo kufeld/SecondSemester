@@ -27,7 +27,7 @@ namespace Birthdays
             while (true)
             {
                 Console.WriteLine("Введите имя");
-                var name = Console.ReadLine();
+                var name = Console.ReadLine().ToLower();
                 if (name == "") break;
                 if(!dictionary.ContainsKey(name))
                 {
