@@ -33,16 +33,6 @@ namespace Names
 
             names.Sort();
 
-            var result = new List<string>();
-            var currentName = names[0];
-            result.Add(currentName);
-
-            foreach (var e in names)
-            {
-                if (e != currentName)
-                    result.Add(e);
-                currentName = e;
-            }
 
             Console.WriteLine();
             Console.WriteLine("Обработка данных завершена");
