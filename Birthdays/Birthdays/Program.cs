@@ -22,7 +22,7 @@ namespace Birthdays
                     }
                 }
             }
-            catch { }
+            catch {Console.WriteLine("Нет данных"); }
 
             while (true)
             {
