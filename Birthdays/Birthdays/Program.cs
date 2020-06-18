@@ -66,8 +66,9 @@ namespace Birthdays
 
         private static void ParseLineString(string line)
         {
-            var key = line.Split(' ')[0];
-            var value = line.Split(' ')[1];
+            var pair =  line.Split('\t');
+            var key = pair[1];
+            var value = pair[0];
             if (!dictionary.ContainsKey(key))
                 dictionary.Add(key, new List<string>());
             dictionary[key].Add(value);
