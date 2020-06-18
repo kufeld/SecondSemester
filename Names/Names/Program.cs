@@ -21,8 +21,11 @@ namespace Names
                     string line;
                     while((line = sr.ReadLine())!= null)
                     {
-                        Console.Write('.');
-                        names.Add(line);
+                       if (!names.Contains(line))
+                        {
+                            Console.Write('.');
+                            names.Add(line);
+                        }
                     }
                 }
             }
