@@ -44,7 +44,7 @@ namespace Birthdays
         {
             Console.WriteLine();
             for (int i = 0; i < month.Length; i++)
-                Console.Write($"{i + 1}         ");
+                Console.Write($"{i + 1, 6}");
             Console.WriteLine();
             for(int i = 0; i < month.Length; i++)
                 Console.Write($"{month[i]}         ");
