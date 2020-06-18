@@ -40,7 +40,7 @@ namespace Names
 
             try
             {
-                using(StreamWriter sr = new StreamWriter("result.txt",false, Encoding.Default))
+                using(StreamWriter sr = new StreamWriter("names.txt",false, Encoding.Default))
                 {
                     foreach (var e in result)
                         sr.WriteLine(Char.ToUpper(e[0]) + e.Substring(1, e.Length-1));
