@@ -16,7 +16,7 @@ namespace Names
 
             try
             {
-                using (StreamReader sr = new StreamReader("names.txt"))
+                using (StreamReader sr = new StreamReader("names.txt", Encoding.GetEncoding(1251)))
                 {
                     string line;
                     while((line = sr.ReadLine())!= null)
