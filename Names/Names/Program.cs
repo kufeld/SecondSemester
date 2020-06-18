@@ -36,7 +36,7 @@ namespace Names
 
             Console.WriteLine();
             Console.WriteLine("Обработка данных завершена");
-            Console.WriteLine($"Имен списке: {result.Count}");
+            Console.WriteLine($"Имен списке: {names.Count}");
 
             try
             {
